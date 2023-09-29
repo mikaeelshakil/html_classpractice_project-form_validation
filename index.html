@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <form class="row g-3 needs-validation" novalidate>
+
+
+  <div class="col-md-4">
+    <label for="f_name" class="form-label">First name</label>
+    <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter Your First Name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+        Please choose a first name
+      </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <label for="l_name" class="form-label">Last name</label>
+    <input type="text" class="form-control l_name" id="l_name" placeholder="Enter Your Last Name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+        Please choose a last name
+      </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <label for="u_name" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="u_name" aria-describedby="inputGroupPrepend" placeholder="Enter Your User Name" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+      <div class="valid-feedback">
+      Awesome!
+    </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <label for="city" class="form-label">City</label>
+    <input type="text" class="form-control" id="city" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+    <div class="valid-feedback">
+      Awesome!
+    </div>
+  </div>
+
+
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose</option>
+      <option>Demra</option>
+      <option>Jatrabari</option>
+      <option>Shampur</option>
+      <option>Siddhirgonj</option>
+      <option>Romna</option>
+      <option>Rampura</option>
+      <option>Hatirjhil</option>
+      <option>Vatara</option>
+      <option>Banani</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+    <div class="valid-feedback">
+      Awesome!
+    </div>
+  </div>
+
+
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+    <div class="valid-feedback">
+      Awesome!
+    </div>
+  </div>
+
+
+<div class="col-md-6">
+    <label for="city" class="form-label">Picture</label>
+    <input type="file" class="form-control" id="city" required>
+    <div class="invalid-feedback">
+      Please Select Your File.
+    </div>
+    <div class="valid-feedback">
+      Awesome!
+    </div>
+  </div>
+
+
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+      <div class="valid-feedback">
+      Awesome!
+    </div>
+    </div>
+  </div>
+
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+
+
+</form>
+
+<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
